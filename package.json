@@ -1,21 +1,30 @@
 {
-  "name": "react-three-fiber-practices",
+  "homepage": "https://stefanygeraldine.github.io/react-three-fiber-practices",
+  "name": "tesla-workshop-web-3d",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/cannon": "^2.5.1",
+    "@react-three/drei": "^7.3.1",
+    "@react-three/fiber": "^7.0.6",
+    "@react-three/postprocessing": "^2.0.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
+    "react-color": "^2.19.3",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "three": "^0.131.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
